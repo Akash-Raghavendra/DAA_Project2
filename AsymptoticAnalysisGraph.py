@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+x = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000]
+y = [0.000626223607332221, 0.00137812194119771, 0.00217745541526208, 0.00300759333546195, 0.0038606372325483, 0.00473193501012397, 0.00561841271871548, 0.00651788557705697, 0.00742872002558252]
+
+a = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000]
+b = [0.000811100006103515, 0.00161194801330566, 0.00235199928283691, 0.00309395790100097, 0.00397634506225585, 0.00470495223999023, 0.00542807579040527, 0.00635695457458496, 0.00701165199279785]
+
+plt.figure()
+
+plt.plot(x, y, label='Line 1: Theoretical Values', marker='o', linestyle='-', color='b')
+
+plt.plot(a, b, label='Line 2: Experimental Values', marker='x', linestyle='--', color='r')
+
+plt.xlabel('n values')
+plt.ylabel('time (in seconds)')
+plt.title('Theoretical Vs Experimental Time Graph')
+
+plt.legend()
+
+plt.show()
